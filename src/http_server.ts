@@ -1,4 +1,4 @@
-// deno run --allow-net http_server.ts
+// deno run --allow-net src/http_server.ts
 // curl http://localhost:8000
 const handler = async (_request: Request): Promise<Response> => {
   const res = await fetch("https://api.github.com/users/denoland", {
