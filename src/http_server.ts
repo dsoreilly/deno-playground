@@ -1,6 +1,6 @@
 // deno run --allow-net src/http_server.ts
 // curl http://localhost:8000
-const handler = async (_request: Request): Promise<Response> => {
+async function handler(_request: Request): Promise<Response> {
   const res = await fetch("https://api.github.com/users/denoland", {
     headers: {
       accept: "application/json",
@@ -13,6 +13,6 @@ const handler = async (_request: Request): Promise<Response> => {
       "content-type": "application/json",
     },
   });
-};
+}
 
 Deno.serve(handler);

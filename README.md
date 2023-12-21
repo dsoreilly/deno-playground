@@ -1,3 +1,3 @@
 # deno-playground
 
-playground for the Deno runtime :sauropod:
+playground for the [Deno](https://deno.com/) runtime :sauropod:
