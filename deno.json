@@ -3,6 +3,9 @@
     "std/": "https://deno.land/std@0.212.0/"
   },
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "cat": "deno run --allow-read src/cat.ts /etc/hosts",
+    "fetch": "deno run --allow-net=deno.com src/fetch.ts",
+    "hello_world": "deno run src/hello_world.ts",
+    "http_server": "deno run --allow-net src/http_server.ts"
   }
 }
