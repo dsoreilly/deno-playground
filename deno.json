@@ -1,7 +1,4 @@
 {
-  "imports": {
-    "std/": "https://deno.land/std@0.212.0/"
-  },
   "tasks": {
     "cat": "deno run --allow-read src/cat.ts /etc/hosts",
     "fetch": "deno run --allow-net=deno.com src/fetch.ts",
